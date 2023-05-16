@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block pagetitle %}Noticeboard{% endblock pagetitle %}
+{% block noticeboard %}
+<section>
+    <h1 class="display-2 fw-bold text-center">Welcome to Noticeboard</h1>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="card p-0">
+                <div class="card-header">Noticeboard</div>
+                <div class="card-body">
+                    <ul>
+                        {% for n in noticeboard %}
+                        <li><a href="{{n.notice_attachment}}">{{n.notice_title}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock noticeboard %}
