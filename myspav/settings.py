@@ -58,7 +58,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'myspav.wsgi.application'
+WSGI_APPLICATION = 'myspav.wsgi.app'
 
 
 # Database
